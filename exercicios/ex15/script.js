@@ -15,7 +15,7 @@ let produto1 = 100;
 let vender = 30;
 const precofinal2 = produto1 + vender;
 
-console.log(`Preço de venda do produto: R${precofinal2}`)
+console.log(`Preço de venda do produto: R$ ${precofinal2}`)
 
 // Exercício 3: Você tem um orçamento de R$ 250,00 e deseja verificar se o custo de um produto, após aplicar um desconto de R$ 50,00, está dentro do orçamento. O custo do produto é R$ 300,00.
 
@@ -24,8 +24,17 @@ let desconto1 = 50
 let produto2 = 300;
 
 const precodesconto1 = produto2 - desconto1;
-const orcamento2 = orcamento = true;
-console.log(`Preço com desconto: R${precodesconto1} e Está dentro do orcamento? ${orcamento2}`);
+const orcamento2 = precodesconto1 <= orcamento;
+console.log(`Preço com desconto: R$ ${precodesconto1} e Está dentro do orcamento? ${orcamento2}`);
 
 // Exercício 4: Você tem duas variáveis, uma que representa a quantidade de produtos em um estoque como uma string ("20") e outra que representa a quantidade mínima necessária de produtos no estoque como um número (20). Verifique se a quantidade atual de produtos é suficiente (igual ou maior que a quantidade mínima necessária) após converter a string para um número. Imprima no console se a quantidade é suficiente ou não.
 
+let estoque2 = String = 20;
+
+let quantidademin = 20;
+
+const qntestoque = quantidademin >= estoque2;
+
+console.log(`A quantidade no estoque é suficiente: ${qntestoque}`)
+
+// Exercício 5: Você tem três variáveis: uma que representa se um produto está disponível como um booleano (true), outra que representa a quantidade de produtos no estoque (10), e uma terceira que representa a quantidade mínima necessária de produtos no estoque (15). Verifique se o produto está disponível e se a quantidade é suficiente (igual ou maior que a quantidade mínima necessária) usando operadores lógicos NOT e AND. Imprima no console se o produto está disponível e tem a quantidade suficiente.
