@@ -29,12 +29,30 @@ console.log(`Preço com desconto: R$ ${precodesconto1} e Está dentro do orcamen
 
 // Exercício 4: Você tem duas variáveis, uma que representa a quantidade de produtos em um estoque como uma string ("20") e outra que representa a quantidade mínima necessária de produtos no estoque como um número (20). Verifique se a quantidade atual de produtos é suficiente (igual ou maior que a quantidade mínima necessária) após converter a string para um número. Imprima no console se a quantidade é suficiente ou não.
 
-let estoque2 = String = 20;
+let quantidadeestoquestring = "20"; // Number 20
 
 let quantidademin = 20;
 
-const qntestoque = quantidademin >= estoque2;
+// Conversão explicita de string para number
+let quantidadeestoque = Number(quantidadeestoquestring);
 
-console.log(`A quantidade no estoque é suficiente: ${qntestoque}`)
+// Verificação de igualdade estrita
+let suficiente1 = quantidadeestoque === quantidademin; // True;
+
+console.log(`A quantidade no estoque é suficiente? ${suficiente1}`);
 
 // Exercício 5: Você tem três variáveis: uma que representa se um produto está disponível como um booleano (true), outra que representa a quantidade de produtos no estoque (10), e uma terceira que representa a quantidade mínima necessária de produtos no estoque (15). Verifique se o produto está disponível e se a quantidade é suficiente (igual ou maior que a quantidade mínima necessária) usando operadores lógicos NOT e AND. Imprima no console se o produto está disponível e tem a quantidade suficiente.
+
+let produtodisponivel = true;
+let estoque1 = 10;
+let quantidademinestoque = 15;
+
+// Verificação de disponibilidadde e quantidade
+let quantidadesuficiente = estoque1 >= quantidademinestoque;
+let produtodisponivelsuficinete = produtodisponivel && quantidadesuficiente;
+
+console.log(`O produto está disponível e tem quantidade suficiente: ${produtodisponivelsuficinete}`);
+
+// Not - verificação o produto está indisponível
+let produtoindisponivel = !produtodisponivel;
+console.log(`O produto está indisponível: ${produtoindisponivel}`);
