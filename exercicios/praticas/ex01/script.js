@@ -16,23 +16,23 @@ console.log(clientes);
 clientes[3] = 'leticia';
 console.log(clientes);
 // c. Remova o último cliente e imprima o array atualizado.
-delete clientes[3];
+clientes.length = clientes.length - 1;
 console.log(clientes);
 
 // Exercício 3: Manipulação de Objetos - parte 1
 // a. Crie um objeto chamado produto com as propriedades nome, preco e quantidade.
-let objeto = (produto = {
+let produto = {
   nome: 'Salgado',
   preco: 1.99,
   quantidade: 200,
-});
+};
 
-console.log(objeto);
+console.log(produto);
 // b. Acesse e imprima o nome do produto.
 console.log(produto.nome);
 // c. Modifique o preço do produto e imprima o objeto atualizado
 produto.preco = 3.99;
-console.log(objeto);
+console.log(produto);
 
 // Exercício 4: Manipulação de Objetos - parte 2
 // a. Crie um objeto chamado venda com as propriedades cliente, produto e valor.
@@ -43,7 +43,7 @@ let venda2 = {
 };
 console.log(venda2);
 // b. Adicione a propriedade data ao objeto.
-venda2[3] = 'data';
+venda2.data = '20/10/2024';
 console.log(venda2);
 // c. Remova a propriedade produto e imprima o objeto atualizado
 
@@ -52,11 +52,21 @@ console.log(venda2);
 
 // Exercício 5: Manipulação dos Tipos Referências
 // a. Crie um array estoque e atribua seus valores para um novo array novoEstoque.
-let estoque1 = (produto2 = {
-  pc: "intel core",
-
-})
-console.log(estoque1)
+let estoque1 = ['Headphone', 'Celular', 'Teclado'];
+let novoestoque1 = [...estoque1];
 // b. Modifique um elemento de novoEstoque e mostre que estoque não foi alterado.
+novoestoque1[2] = 'Mouse';
+console.log(novoestoque1);
+console.log(estoque1);
 // c. Crie um objeto funcionario e atribua seus valores para um novo objeto novoFuncionario.
+let funcionario1 = {
+  nome: 'Daniel',
+  cargo: 'TI',
+  salario: 3000,
+};
+
+let novofuncionario1 = { ...funcionario1 };
+novofuncionario1.cargo = 'Gerente';
+console.log(novofuncionario1);
+console.log(funcionario1);
 // d. Modifique uma propriedade de novoFuncionario e mostre que funcionario não foi alterado
