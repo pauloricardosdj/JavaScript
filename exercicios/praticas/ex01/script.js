@@ -52,6 +52,11 @@ console.log(venda2);
 
 // Exercício 5: Manipulação dos Tipos Referências
 // a. Crie um array estoque e atribua seus valores para um novo array novoEstoque.
+let estoque1 = (produto2 = {
+  pc: "intel core",
+
+})
+console.log(estoque1)
 // b. Modifique um elemento de novoEstoque e mostre que estoque não foi alterado.
 // c. Crie um objeto funcionario e atribua seus valores para um novo objeto novoFuncionario.
 // d. Modifique uma propriedade de novoFuncionario e mostre que funcionario não foi alterado
